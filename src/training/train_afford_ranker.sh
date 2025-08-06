@@ -8,5 +8,5 @@ export CUDA_VISIBLE_DEVICES="0, 1, 2"
 
 ACCELERATE_LOG_LEVEL=info accelerate launch \
 --main_process_port 25679 --config_file training_configs/deepspeed_zero2.yaml \
-train_prm.py \
+train_afford_ranker.py \
 training_configs/prm_train.yaml
